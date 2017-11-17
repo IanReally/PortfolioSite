@@ -5,38 +5,95 @@
   src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/CWlc_g68BGYDSGdpJvpktgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-ul{
-  list-style-type: none;
-  font-family: 'PT Sans';
-  font-size: 20px;
+
+
+header {
+  padding-top: 10px;
+  width: 1024px;
+  position: fixed;
+}
+.navcontainer {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 70px;
+  background: #647a6c;
+}
+.navcontainer ul {
   margin: 0;
   padding: 0;
+  line-height: 15px;
 }
-li{
-  display: block;
-  float: left;
-  text-align: center;
-  min-width: 120px;
-
-}
-
-h1{
+.navcontainer li {
   font-family: 'PT Sans';
-  font-size: 50px;
+  font-size: 26px;
+  text-align: ;
 }
-h2{
+.navcontainer ul li{
+  list-style: none;
+}
+.navcontainer ul li a{
+  text-decoration: none;
+  float: right;
+  padding: 25px 40px;
+  color: #dee2df;
+}
+.navcontainer ul li a:hover{
+  color: white;
+}
+a:visited {
+  color: #dee2df;
+}
+h1 {
+  display: inline-block;
+  height: 60px;
+  padding-left: 20px;
+  float: left;
+  font-family: 'PT Sans';
+  font-size: 40px;
+  color: #dee2df;
+}
+h2 {
   font-family: 'PT Sans';
   font-size: 30px;
 }
+#about{
+display: inline-block;
+}
+#portrait{
+  float: left;
+  display: block;
+  margin-right: 45px;
+  padding-top: 50px;
+  width: 350px;
+  border-radius: 15px;
+  clear: both;
+}
+#aboutpar{
+  float: right;
+  display: block;
+  padding-top: 60px;
+  width: 600px;
+  clear: both;
+}
 
-
-body{
+body {
+  background: #ffffff;
   text-align: left;
   display: grid;
   margin: auto;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   max-width: 800px;
   min-width: 300px;
 }
-#MainTitle{
-  font-size: 35px;
+#kshardwoodimg {
+  display: block;
+  margin: auto;
+  max-width: 800px;
+  min-width: 350px;
+}
+#contactinfo {
+  text-align: center;
 }
